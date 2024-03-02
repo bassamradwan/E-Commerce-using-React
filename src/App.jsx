@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Dashboard from "./pages/admin/dashboard/Dashboard";
 import Cart from "./pages/cart/Cart";
 import Home from "./pages/home/Home";
-import NoPage from "./pages/nopage/noPage";
 import Order from "./pages/order/Order";
 import MyState from "./context/data/myState";
 import Login from "./pages/registration/Login";
@@ -14,6 +13,7 @@ import UpdateProduct from "./pages/admin/pages/UpdateProduct";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import Allproducts from "./pages/allproducts/AllProducts";
+import NoPage from "./pages/nopage/noPage";
 
 function App() {
   return (
@@ -38,7 +38,7 @@ function App() {
             <ProtectedRoutesForAdmin><AddProduct /></ProtectedRoutesForAdmin>} />
           <Route path="/updateproduct" element={
             <ProtectedRoutesForAdmin><UpdateProduct /></ProtectedRoutesForAdmin>} />
-          <Route path="/*" element={<NoPage />} />
+          <Route path="/*" element={<NoPage/>} />
         </Routes>
         <ToastContainer/>
       </Router>
