@@ -13,7 +13,8 @@ import UpdateProduct from "./pages/admin/pages/UpdateProduct";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import Allproducts from "./pages/allproducts/AllProducts";
-import NoPage from "./pages/nopage/noPage";
+import NoPage from "./pages/nopage/NoPage";
+
 
 function App() {
   return (
