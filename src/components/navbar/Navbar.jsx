@@ -141,7 +141,7 @@ export default function Navbar() {
                  
                     <h1 className=' text-2xl font-bold text-black  px-2 py-1 rounded' style={{ color: mode === 'dark' ? 'white' : '', }}>Tawfir</h1>
                     <a className="flex items-center text-gray-700 ">
-                    <img className="inline-block w-10 h-10 rounded-full" src={logo}/>
+                    {/* <img className="inline-block w-10 h-10 rounded-full" src={logo}/> */}
                     </a>
                     
                   </div>
